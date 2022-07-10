@@ -1,5 +1,12 @@
 const path = require("path");
 module.exports = {
+    publicPath: "./",
+    pages: {
+        index: {
+            entry: 'src/main.js',
+            title: 'my project',
+        }
+    },
     configureWebpack: {
         resolve: {extensions: [".ts", ".tsx", ".js", ".json"]},
         module: {
